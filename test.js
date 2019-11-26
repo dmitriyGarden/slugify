@@ -179,7 +179,7 @@ test('supports Polish', t => {
 
 test('supports Ukrainian', t => {
 	const dict = require('./dictionaries/ukrainian');
-	t.is(slugify('Є Ґ ї', {lowercase: false, separator: ' ', dictionaries: [dict]}), 'Ye G yi');
+	t.is(slugify('Є Ґ ї и', {lowercase: false, separator: ' ', dictionaries: [dict]}), 'Ye G i y');
 });
 
 test('supports Serbian', t => {
